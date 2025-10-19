@@ -27,3 +27,6 @@ jobs:
       - name: Get the Colima version
         run: |
           echo "Colima version: ${{ steps.docker.outputs.colima-version }}"
+      - name: Run ubuntu
+        run: |
+          docker run ubuntu
